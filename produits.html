@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="scss/style.css"/>
+
+    <!-- Themify icons -->
+    <link rel="stylesheet" href="themify/themify-icons.css"/>
+
+    <!-- Waves css -->
+    <link rel="stylesheet" href="plugins/css/waves.min.css"/>
+
+    <title>ELKHAZRI - Administrator</title>
+</head>
+
+<body>
+<header class="main-navbar-header">
+    <!-- Navigation bar code from the first HTML -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top theme-color">
+        <div class="menu-toggle-button">
+            <a class="nav-link wave-effect" href="#" id="sidebarCollapse">
+                <span class="ti-menu"></span>
+            </a>
+        </div>
+        <a class="navbar-brand" href="#"> Welcome Admin </a>
+
+        <ul class="navbar-nav ml-auto navbar-top-links">
+            <li class="dropdown">
+                <a
+                        class="dropdown-toggle profile-pic"
+                        data-toggle="dropdown"
+                        href="#"
+                        aria-expanded="false"
+                >
+                    <!--<img
+                            src="#"
+                            alt="user-img"
+                            width="36"
+                            class="img-circle"
+                    />-->
+                    <b class="d-none d-sm-inline-block">Taoufik Hicham</b></a
+                >
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <div class="dw-user-box text-center">
+                            <div class="u-text">
+                                <p class="text-muted">elkhazrihicham@gmail.com</p>
+                                <a
+                                        href="profile.html"
+                                        class="btn btn-rounded btn-danger btn-sm"
+                                >View Profile</a
+                                >
+                            </div>
+                        </div>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                        <a href="#"><i class="ti-user"></i> My Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ti-wallet"></i> My Balance</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ti-email"></i> Inbox</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                        <a href="#"><i class="ti-settings"></i> Account Setting</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li>
+                        <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+    <!-- ... -->
+</header>
+<div class="wrapper container-fluid" style="padding-left: 0% !important;">
+    <!-- Sidebar code from the first HTML -->
+    <nav id="sidebar" class="nav-sidebar">
+        <ul class="list-unstyled components" id="accordion">
+            <li>
+                <div class="form-group p-r-20 p-l-20">
+                    <input type="text" class="form-control" placeholder="Search..."/>
+                </div>
+            </li>
+            <li class="active">
+                <a 
+                        href="#homeSubmenu"
+                        class="accordion-toggle wave-effect"
+                        data-toggle="collapse"
+                        aria-expanded="false"
+                >
+                    <i class="ti-home m-r-10"></i> Catégories
+                </a>
+                <ul
+                        class="collapse list-unstyled inside-level"
+                        id="homeSubmenu"
+                        data-parent="#accordion"
+                >
+                    <li><a href="index.html"><i class="ti-control-record m-r-10"></i> Afficher</a></li>
+                    <li><a href="#"><i class="ti-control-record m-r-10"></i> ADD</a></li>
+                </ul>
+                
+            </li>
+            <li>
+                <a href="produits.html" class="wave-effect"><i class="ti-file m-r-10"></i> Product</a>
+            </li>
+            <li>
+                <a  href="Commandes.html" class=" wave-effect"> <i class="ti-image m-r-10"></i> Orders</a
+                >
+                <ul
+                        class="collapse list-unstyled inside-level"
+                        id="pageSubmenu"
+                        data-parent="#accordion"
+                        id="accordion2"
+                >
+                  
+                <a href="#" class="wave-effect"><i class="ti-mobile m-r-10"></i> Contact</a>
+            </li>
+            <li>
+                <a href="login.html" class="wave-effect">
+                    <i class="ti-user m-r-10"></i>Login Page
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ... -->
+    
+    <!-- Add product form from the second HTML -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+       
+    </style>
+</head>
+
+
+
+
+
+<div class="form-container container-fluid col-10">
+    <div class="m-b-15">
+        <h6 class="text-center">Product</h6>
+        <hr/>
+    </div>
+    <form>
+        <!-- ... form inputs and elements ... -->
+
+        <div class="form-group">
+            <label for="aboutTitle">Name</label>
+            <input type="text" class="form-control" id="aboutTitle"/>
+        </div>
+        <div class="form-group">
+            <label for="aboutCategory">Catégories</label>
+            <input type="text" class="form-control" id="aboutCategory"/>
+        </div>
+        <div class="form-group">
+            <label for="aboutDesc">Description</label>
+            <textarea class="form-control" id="aboutDesc"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="aboutFile">Choose image</label>
+            <input type="file" id="aboutFile"/>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+            <label class="form-check-label" for="exampleCheck1">Active</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+
+
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+  
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="plugins/js/waves.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+            $("#sidebar").toggleClass("active");
+        });
+        Waves.init();
+        Waves.attach(".wave-effect", ["waves-button"]);
+        Waves.attach(".wave-effect-float", ["waves-button", "waves-float"]);
+    });
+</script>
+</body>
+</html>
